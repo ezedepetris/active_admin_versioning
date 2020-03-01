@@ -16,10 +16,12 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}) { |f| File.basename(f) }
   gem.require_paths = ["lib"]
 
-  gem.required_ruby_version = ">= 2.1.0"
+  gem.required_ruby_version = ">= 2.3.0"
 
   gem.add_dependency "activeadmin", ">= 1.0.0.pre4"
-  gem.add_dependency "paper_trail", ">= 4.2.0"
+  gem.add_dependency "paper_trail", ">= 9.2.0"
+  gem.add_dependency "actionpack", ">= 5.2", "< 6.1"
+
 
   gem.add_development_dependency "bundler", "~> 1.13"
   gem.add_development_dependency "rake",    "~> 10.0"

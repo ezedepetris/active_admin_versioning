@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem "rails",       "~> 5.0.0"
-gem "paper_trail", "~> 5.2.2"
+gem "rails",       "> 5.0.0"
+gem "paper_trail", "~> 9.2.0"
 gem "inherited_resources", github: "activeadmin/inherited_resources"
 gem "activeadmin",         github: "activeadmin/activeadmin"
+# gem "actionpack", ">= 5.2", "< 6.1"
 gem "pry"
 gem 'appraisal'
 
